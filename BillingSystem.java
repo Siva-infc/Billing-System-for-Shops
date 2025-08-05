@@ -41,7 +41,7 @@ public class BillingSystem{
                     System.out.println();
                     double total = 0;
                     for(Item itemCurrent : customer.cart.values()) {
-                        total += itemCurrent.price;
+                        total += itemCurrent.price * itemCurrent.quantity;
                     }
                     System.out.println("Total: " + total);
                     System.out.println("-------------------------------------------------------------");
